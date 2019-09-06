@@ -21,7 +21,13 @@ Place your code that does all of this below this comment block, and
 before the next comment block.
 */
 // PLACE YOUR CODE BELOW
+let substringArray = [];
 
+words.map(function(word){
+  substringArray.push(word.substring(1,3));
+})
+
+wordList = substringArray.join(", ");
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 2_extracting_words.js" you should see the following on

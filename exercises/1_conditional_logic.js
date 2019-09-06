@@ -12,7 +12,21 @@ function paintMixer(color1, color2) {
   The order of the params should not matter.
   */
   // PLACE YOUR CODE BELOW
+  let colorsArray = [color1.toLowerCase(), color2.toLowerCase()];
 
+  let mixed = 'unknown';
+
+  if ((colorsArray.includes('blue')) && (colorsArray.includes('red'))){
+    mixed = 'purple';
+  } else if ((colorsArray.includes('green')) && (colorsArray.includes('red'))){
+        mixed = 'brown';
+  } else if ((colorsArray.includes('blue')) && (colorsArray.includes('yellow'))){
+        mixed = 'green';
+  } else if ((colorsArray.includes('red')) && (colorsArray.includes('yellow'))){
+        mixed = 'orange';
+  }
+
+  return mixed;
   // PLACE YOUR CODE ABOVE
 }
 
